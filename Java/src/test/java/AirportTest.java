@@ -31,7 +31,7 @@ public class AirportTest {
             new experimentalPlane("Ryan X-13 Vertijet", 560, 307, 500, ExperimentalTypes.VTOL, ClassificationLevel.TOP_SECRET)
     );
 
-    private static PassengerPlane passengerPlane1 = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242); //1
+    private static PassengerPlane passengerPlane = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242); //1
 
     @Test
     public void testGetTransportMilitaryPlanes() {
