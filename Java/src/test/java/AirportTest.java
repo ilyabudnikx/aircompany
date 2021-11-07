@@ -31,7 +31,7 @@ public class AirportTest {
             new experimentalPlane("Ryan X-13 Vertijet", 560, 307, 500, ExperimentalTypes.VTOL, ClassificationLevel.TOP_SECRET)
     );
 
-    private static PassengerPlane planeWithMaxPassengerCapacity = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242);
+    private static PassengerPlane passengerPlane = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242); //1
 
     @Test
     public void testGetTransportMilitaryPlanes() {
@@ -52,7 +52,7 @@ public class AirportTest {
         System.out.println("TEST testGetPassengerPlaneWithMaxCapacity started!");
         Airport airport = new Airport(planes);
         PassengerPlane expectedPlaneWithMaxPassengersCapacity = airport.getPassengerPlaneWithMaxPassengersCapacity();
-        Assert.assertTrue(expectedPlaneWithMaxPassengersCapacity.equals(planeWithMaxPassengerCapacity));
+        Assert.assertTrue(expectedPlaneWithMaxPassengersCapacity.equals(passengerPlane));
     }
 
     @Test
