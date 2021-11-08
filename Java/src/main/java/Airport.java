@@ -12,14 +12,16 @@ import java.util.*;
 
 public class Airport {
     private List<? extends Plane> planes;
-
-
-
-    public List<PassengerPlane> getPasPl() {
-        List<? extends Plane> l = this.planes;
-        List<PassengerPlane> x = new ArrayList<>();
-        for (Plane p : l) {if (p instanceof PassengerPlane) {x.add((PassengerPlane) p);}}
-        return x;
+    public List<PassengerPlane> getPassengersCapacity() {
+        List<PassengerPlane> PassengerPlanes = new ArrayList<>();
+        for (Plane plane : planes)
+        {
+            if (p instanceof PassengerPlane)
+            {
+                PassengerPlanes.add((PassengerPlane) plane);
+            }
+        }
+        return PassengerPlanes;
     }
 
     public List<MilitaryPlane> getMilitaryPlanes() {
