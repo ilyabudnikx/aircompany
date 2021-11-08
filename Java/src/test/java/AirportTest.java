@@ -52,7 +52,7 @@ public class AirportTest {
 
     public void GetPassengerPlaneWithMaxCapacity() {
         Logger logger = Logger.getLogger(Runner.class.getName());
-        logger.log(Level.INFO, "TES T testGetPassengerPlaneWithMaxCapacity started!");
+        logger.log(Level.INFO, "TEST testGetPassengerPlaneWithMaxCapacity started!");
         Airport airport = new Airport(planes);
         PassengerPlane expectedPlaneWithMaxPassengersCapacity = airport.getPassengerPlaneWithMaxPassengersCapacity();
         Assert.assertEquals(planeWithMaxPassengerCapacity, expectedPlaneWithMaxPassengersCapacity);
