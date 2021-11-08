@@ -34,13 +34,13 @@ public class AirportTest {
     private static PassengerPlane passengerPlane = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242); //1
 
     @Test
-    public void testGetTransportMilitaryPlanes() {
+    public void GetTtansportMilitaryPlanes() {
         Airport airport = new Airport(planes);
         List<MilitaryPlane> transportMilitaryPlanes = airport.getTransportMilitaryPlanes();
-        boolean flag = false;
+        boolean TransportPlane = false;
         for (MilitaryPlane militaryPlane : transportMilitaryPlanes) {
             if ((militaryPlane.getType() == MilitaryType.TRANSPORT)) {
-                flag = true;
+                TransportPlane = true;
                 break;
             }
         }
